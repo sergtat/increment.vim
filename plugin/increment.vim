@@ -52,13 +52,10 @@
 " command in normal mode which increments the number under the cursor.
 " 
 " Last Modification: Dec 17 2001 00:59:09
-
-
 "=========================================================================== 
 com! -ra -nargs=? Inc :call IncrementColumn(1,<args>)
 com! -ra -nargs=? IncR :call IncrementColumn(2,<args>)
 com! -ra -nargs=? IncN :call IncrementColumn(0,<args>)
-
 "=========================================================================== 
 function! StrRepeat(str, count)
 	let i = 1
@@ -147,4 +144,3 @@ function! IncrementColumn(pad, ...)
 	endwhile
 	normal `<
 endfunction
-
